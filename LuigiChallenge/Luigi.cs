@@ -32,6 +32,7 @@ namespace LuigiChallenge
         public string GoHome2D(int[][] map)
         {
             string result = "";
+
             for (int i = 0; i < map.Length; i++)
             {
                 for (int x = 0; x < map[i].Length; x++)
@@ -44,7 +45,7 @@ namespace LuigiChallenge
                         {
                             if (map[i][x + 1] == 0)
                             {
-                                result = result + "Right ";
+                                result += "Right ";
                             }
                         }
 
@@ -52,7 +53,7 @@ namespace LuigiChallenge
                         {
                             if (map[i + 1][x] == 0)
                             {
-                                result = result + "Down ";
+                                result += "Down ";
                             }
                         }
                     }
